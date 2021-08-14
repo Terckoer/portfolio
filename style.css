@@ -1,0 +1,346 @@
+/* 
+    Colores background: 3A5240, 27402E
+
+    Color de texto: C3EAD7
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Mono', monospace;
+    color: #6cd386;
+}
+
+
+#p2{
+    background: #27402E;
+    width: 100vw;
+    height: 100vh;
+}
+
+#p3{
+    background: #3A5240;
+    width: 100vw;
+    height: 100vh;
+}
+
+#p4{
+    background: #27402E;
+    width: 100vw;
+    height: 100vh;
+}
+
+#p5{
+    background: #3A5240;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Container */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+
+}
+
+.container section{
+    scroll-snap-align: start;
+}
+
+.navbar{
+    background: #0B2111;
+    width: 100%;
+    height: 15vh; 
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    
+}
+nav{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #6cd386;
+    margin: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+nav a:hover{
+    color: #0B2111;
+    background:#6cd386 ;
+    margin: 30px;
+    font-size: 28px;
+}
+
+
+/* HOME */
+.home{
+    padding-top: 30vh;
+    padding-left: 10vw;
+    background: #3A5240;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.home div img{
+    border-radius: 50%;
+    border: 2px solid #0B2111;
+}
+
+.home .text{
+    width: 600px;
+    margin-left: 7vw;
+    margin-top: 10vh;
+    font-size: 24px;
+}
+.home .text p span{
+    font-size: 32px;
+    color: aliceblue;
+}
+
+/* CIERRA HOME  */
+
+/* ABRE ABOUT */
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about div p{
+    font-size: 24px;
+    width: 800px;
+    text-align: justify;
+    margin-top: 16vh;
+    
+}
+.about div img{
+    margin-top: 16vh;
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    border: 2px solid #0B2111;
+
+}
+/* CIERRA ABOUT */
+
+
+/* ABRE SKILLS */
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills-container{
+    margin-right: 0vw;
+    margin-top: 16vh;
+    width: 84%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills .icons{
+    background: #6cd386;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 2px solid #0B2111;
+}
+.skills .icons .item{
+    width: 30%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding: 10px;
+    
+    
+}
+.skills .icons .item i{
+    font-size: 140px;
+    color: #0B2111;
+}
+
+.skills .icons .item span{
+    font-size: 24px;
+    color: #0B2111;
+    margin-top: 10px;
+}
+
+
+.skills .text{
+    font-size: 24px;
+    text-align: justify;
+    width: 31%;
+    height: 80%;
+}
+
+/* CIERRA SKILLS */
+
+
+/* ABRE PROJECTS */
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-box{
+    margin-top: 16vh;
+    background: #3A5240;
+    width: 84%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #0B2111;
+}
+
+.project-item{
+    margin: 10px;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #6cd386;
+    border: 2px solid #0B2111;
+}
+
+.project-item img{
+    width: 100%;
+    height: 50%;
+    border-radius: 2px 2px 0px 0px;
+}
+.project-item div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-item div p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #27402E;
+}
+.project-item div a{
+    font-size: 24px;
+    padding: 5px;
+    width: 80%;
+    background: #27402E;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #0B2111;
+}
+
+
+/* CIERRA PROJECTS */
+
+
+/* ABRE CONTACT */
+.contact{
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-container{
+    margin-top: 18vh;
+    width: 40%;
+    height: 50%;
+    background: #6cd386;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #0B2111;
+    border-radius: 10px;
+}
+
+.contact-container .email{
+    width: 80%;
+    height: 10%;
+    background: #27402E;
+    color: #6cd386;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #0B2111;
+}
+
+.contact-container .number{
+    width: 80%;
+    height: 10%;
+    background: #27402E;
+    color: #6cd386;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #0B2111;
+}
+
+.contact-container .textarea{
+    width: 80%;
+    max-width: 80%;
+    height: 40%;
+    background: #27402E;
+    color: #6cd386;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #0B2111;
+
+}
+
+.contact-container .button{
+    width: 40%;
+    height: 10%;
+    background: #27402E;
+    color: #6cd386;
+    font-size: 24px;
+    border-radius: 30px;
+   
+
+}
+/* CIERRA CONTACT */
